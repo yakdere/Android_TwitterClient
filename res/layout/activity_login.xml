@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/login_background"
+    tools:context=".LoginActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="@string/Hello" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:text="@string/welcome" />
+
+    <ImageButton
+        android:id="@+id/login"
+        android:onClick="loginToRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/contentdesc"
+        android:src="@drawable/singin_button" />
+
+</RelativeLayout>

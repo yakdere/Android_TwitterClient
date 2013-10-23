@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComposeTweetActivity" >
+
+    <Button
+        android:id="@+id/bCancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#E0E0E0"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        android:onClick="onCancelComposeTweet"
+        android:text="@string/bCancel" />
+
+     <Button
+         android:id="@+id/bComposeTweet"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@+id/bCancel"
+         android:background="#4099FF"
+         android:onClick="onPostTweet"
+         android:text="@string/bComposeTweet"
+         android:textColor="#FFFFFF"
+         android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/etComposeTweet"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentRight="true"
+         android:inputType="textMultiLine"
+         android:hint="@string/etComposeTweet"
+         android:layout_below="@+id/bCancel"
+         android:ems="10" >
+         <requestFocus />
+     </EditText>
+
+</RelativeLayout>
